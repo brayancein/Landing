@@ -1,0 +1,257 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+*{
+    /* outline: 1px solid red; */
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+}
+.encima__contenedor{
+    text-transform: uppercase;
+    text-align: center;
+    padding: 2rem;
+}
+
+[class$='__contenedor']{
+    max-width: 120rem;
+    margin: 0 auto;
+    width: 90%;
+}
+/* Header */
+.header__barra{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+.header__logo{
+    display: flex;
+    text-transform: uppercase;
+}
+.header__logo h1{
+    font-size: 1.6rem;
+}
+.header__logo::before{
+    content: "";
+    display: block;
+    background-image: url("../img/logo.jpg");
+    width: 40px;
+    height: 40px;
+}
+.header__logo span{
+    display: block;
+    color: #F5841E;
+}
+@media (min-width: 798px) { 
+    .header__logo span{
+        display: inline;
+    }
+    .header__logo{
+        align-items: center;
+    }
+}
+.texto{
+    color: white;    
+}
+.texto div p{
+    font-size: 2.4rem;
+    text-align: right;
+    
+}
+
+.texto p:last-of-type{
+    font-size: 1rem;
+    text-align: right;
+}
+.price{
+    font-size: 5rem;
+}
+.first{
+    font-size: 1.3rem;
+    display: block;
+}
+.get{
+    display: inline-block;
+    background-color: orange;
+    padding: 1rem;
+    text-align: center;
+    border-radius: .8rem;
+    text-decoration: none;
+    color: white;
+    font-weight: 900;
+}
+.call__link span{
+    color:#F5841E ;
+    font-weight: 900;
+    font-size: 2rem;
+}
+.call__link {
+    text-decoration: none;
+    color: gray;
+}
+.grafico{
+    background-image: url(../img/banner.jpg);
+    min-height: 16rem;
+    /* max-height: 30rem; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+@media (min-width: 768px) { 
+    .grafico{
+        background-size: cover;
+        min-height: 30rem;
+    }
+}
+.texto{
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 1.5rem;
+}
+/* Areas */
+.areas{
+    background-color: #FDFAE9;
+}
+
+.listado{
+    margin: 2rem 0 5rem 0;
+}
+@media (min-width: 762px) { 
+    .listado{
+        display: flex;
+        justify-content: space-around;
+        gap: 3rem;
+
+    }
+}
+@media (min-width: 768px) { 
+    .listado__categoria{
+        flex-basis: calc(33.3%-10rem);
+    }
+
+}
+@media (min-width: 768px) { 
+    .lista{
+        margin: 0 auto;
+        width: 80%;
+    }
+}
+
+
+.areas__titulo{
+    padding: 0 5rem;
+    text-align: center;
+    color: #315E88;
+    margin-top: 2rem;
+    
+
+}
+.listado__categoria{
+    margin-top: 1rem;
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+    color: white;
+}
+
+.listado__categoria h3{
+    font-size: 2.5rem;
+}
+.listado__categoria:nth-child(1)
+{
+    background-color: #D2532A;
+}
+.listado__categoria:nth-child(2)
+{
+    background-color: #315D89;
+}
+.listado__categoria:nth-child(3)
+{
+    background-color: #86A73E;
+}
+
+/* Why Choose */
+.porque__titulo{
+    color: #315D89;
+    text-align: center;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+}
+
+.lista__porque::before{
+    content: "";
+    display: block;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: #80A1C0;
+    margin-right: 1rem;
+    /* flex-basis: 20px; */
+}
+.lista__porque{
+    display: flex;
+    margin-bottom: 2rem;
+}
+.lista__porque:last-of-type{
+    margin-bottom: 0;
+}
+.lista__porque h4{
+    text-transform: uppercase;
+}
+
+.Submit{
+   /* all: unset; */
+    display: block;
+    text-align: center;
+    padding: 2rem;
+    text-decoration: none;
+    color: white;
+    width: 30rem;
+    font-weight: 900;
+    font-size: 2.5rem;
+    margin: 0 auto;
+    background-color: #F38430;
+    border-radius: 1.5rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.footer__contenedor{
+    font-size: 1rem;
+    text-align: center;
+    
+}
+
+@media (min-width: 768px) { 
+    .texto{
+        display: flex;
+        padding-right:1rem ;
+    }
+    .texto div{
+        display: flex;
+    }
+    .texto div p{
+        flex-basis: 50%;
+    }
+    .get{
+        max-width: 50%;
+        align-self: flex-end;
+    }
+    .texto p:last-of-type{
+        max-width: 50%;
+        align-self: flex-end;
+    }
+}
